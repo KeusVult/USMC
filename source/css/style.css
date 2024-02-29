@@ -5,5 +5,10 @@
 .header {
     width: 100%;
     height: 200px;
-    background-color: rgb(102, 176, 51);
+    background-color: rgb(78, 112, 56);
+}
+.content {
+    background-color: #244958;
+    width: 100%;
+    height: 200px;
 }
