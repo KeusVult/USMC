@@ -25,13 +25,92 @@
     }
     .login {
         margin-right: 120px;
-        margin-top: 90px;
+        margin-top: 65px;
         width: 600px;
         height: 300px;
-        border-color: white;
+        border-color: rgb(98,98,98);;
+        border-color: linear-gradient(90deg, rgba(98,98,98,1) 15%, rgba(94,94,94,1) 51%, rgba(139,139,139,1) 100%);
         border-style: solid;
         border-width: 2px;
+        display: flex;
+        flex-direction: column;
+        h2 {
+            background-color: black;
+            width: 100%;
+            height: 20%;
+            background: rgb(88,108,86);
+            background: linear-gradient(90deg, rgba(88,108,86,1) 15%, rgba(74,93,60,1) 51%, rgba(50,74,42,1) 100%);
+            border-color: rgb(98,98,98);
+            border-style: solid;
+            border-width: 2px;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            display: flex;
+            align-items: center;
+            span {
+                margin-left: 5px;
+            }
+        }
+        form {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            div.log-last {
+                display: flex;
+                justify-content: space-around;
+                input[type=submit] {
+                    background-color: rgb(88,108,86);
+                    border-color: hsla(0,0%,100%,.04);
+                    width: auto;
+                    height: 35px;
+                    font-size: 20px;
+                }
+                input[type=button] {
+                    background-color: rgb(88,108,86);
+                    border-color: hsla(0,0%,100%,.04);
+                    width: auto;
+                    height: 35px;
+                    font-size: 20px;
+                }
+            }
+            div {
+                width: 100%;
+                height: 60px;
+                display: flex;
+                margin-left: 30px;
+                label {
+                    margin-right: 10px;
+                }
+                input[type=text] {
+                    background: #232528;
+                    border-color: hsla(0,0%,100%,.04);
+                    width: 75%;
+                    height: 40px;
+                    font-size: 18px;
+                }
+                input[type=password] {
+                    background: #232528;
+                    border-color: hsla(0,0%,100%,.04);
+                    width: 75%;
+                    height: 40px;
+                    font-size: 18px;
+                }
+            }
+        }
     }
+}
+.server {
+    background-color: rgb(88,108,86);
+    border-right: none;
+    border-left: none;
+    border-width: 2px;
+    border-color: rgb(98,98,98);
+    border-style: solid;
+    width: 100%;
+    height: 200px;
 }
 .content {
     font-size: 18px;
