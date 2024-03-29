@@ -6,6 +6,7 @@
     justify-content: center;
     font-size: 25px;
     font-family: "Bree Serif", serif;
+    z-index: 1px;
 }
 .header > ul {
     list-style: none;
