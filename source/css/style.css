@@ -15,17 +15,13 @@
 }
 .top {
     width: 100%;
+    margin-top: 100px;
     height: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    img {
-        width: 200px;
-        height: 200px;
-    }
     .login {
         margin-right: 120px;
-        margin-top: 65px;
         width: 600px;
         height: 300px;
         border-color: rgb(98,98,98);;
@@ -61,6 +57,7 @@
             div.log-last {
                 display: flex;
                 justify-content: space-around;
+                margin-left: inherit;
                 input[type=submit] {
                     background-color: rgb(88,108,86);
                     border-color: hsla(0,0%,100%,.04);
@@ -97,6 +94,11 @@
                     width: 75%;
                     height: 40px;
                     font-size: 18px;
+                }input[type=text]:focus {
+                    border-width: 3px;
+                }
+                input[type=password]:focus {
+                    border-width: 3px;
                 }
             }
         }
@@ -106,10 +108,10 @@
     background-color: rgb(88,108,86);
     border-right: none;
     border-left: none;
-    border-width: 2px;
+    border-width: 1px;
     border-color: rgb(98,98,98);
     border-style: solid;
-    width: 100%;
+    width: 99.5%;
     height: 200px;
 }
 .content {
