@@ -1,4 +1,6 @@
-function Redirect()
+function Redirect(a)
 {
-    location.replace("register.html"); 
+    if(a==1) {
+        location.replace("register.html"); 
+    }
 }
