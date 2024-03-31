@@ -144,10 +144,51 @@
 }
 .content {
     font-size: 18px;
-    width: 70%;
-    height: 200px;
+    width: 100%;
+    height: auto;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 20px;
+    flex-direction: row;
+    .main-content {
+        width: 60%;
+        height: 100px;
+        background: #0f172a;
+        margin-left: 35px;
+    }
+    .extra-content {
+        margin-right: 35px;
+        width: 25%;
+        height: auto;
+        .calendar {
+            #firstCalendar {
+                width: 100%;
+                height: auto;
+                font-family: Helvetica;
+                margin-top: 20px;
+                table {
+                    width: 100%;
+                }
+            }
+            #secondCalendar {
+                margin-top: 20px;
+                width: 100%;
+                height: auto;
+                font-family: Helvetica;
+                table {
+                    width: 100%;
+                }
+            }
+            h2 {
+                margin-top: 10px;
+                margin-bottom: 20px;
+                color: #A6AE85;
+            }
+        }
+    }
+}
+.data:hover {
+    color: #A6AE85;
+    background-color: #222222;
 }
