@@ -1,19 +1,9 @@
-.terms {
-    font-size: 20px;
-    width: 70%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    h3 {
-        font-size: 30px;
-        font-family: Verdana;
-        margin-top: 20px;
-        margin-bottom: 40px;
-    }
-    li {
-        margin-top: 7px;
-        margin-bottom: 7px;
-    }
+.conteiner {
+    animation-name: register-animation;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .register {
     width: 100%;
@@ -24,6 +14,8 @@
     align-items: center;
     .login {
         margin-right: 120px;
+        backdrop-filter: blur(20px);
+        background: transparent;
         width: 600px;
         height: auto;
         border-color: rgb(98,98,98);;
@@ -124,5 +116,30 @@
                 }
             }
         }
+    }
+}
+@keyframes register-animation {
+    0% {
+        background-image: url(../imgs/humvee.jpg);
+    } 20% {
+        background-image: url(../imgs/humvee.jpg);
+    } 21% {
+        background-image: url(../imgs/Navy.jpg);
+    } 40% {
+        background-image: url(../imgs/Navy.jpg);
+    } 41% {
+        background-image: url(../imgs/usmc-heavy.jpg);
+    } 60% {
+        background-image: url(../imgs/usmc-heavy.jpg);
+    } 61% {
+        background-image: url(../imgs/tanks.jpg);
+    } 80% {
+        background-image: url(../imgs/tanks.jpg);
+    } 81% {
+        background-image: url(../imgs/Polish.jpg);
+    } 99% {
+        background-image: url(../imgs/Polish.jpg);
+    } 100% {
+        background-image: url(../imgs/humvee.jpg);
     }
 }

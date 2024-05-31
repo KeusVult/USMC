@@ -17,6 +17,10 @@ function createFirstCalendar(month, year) {
     return calendarHtml;
 }
 function createSecondCalendar(month,year) {
+    if(month == 11) {
+        month = -1;
+        year += 1;
+    }
     let firstDay = new Date(year, month + 1, 1).getDay()-1;
     let daysInMonth = new Date(year, month + 2, 0).getDate();
     let calendarHtml = '<table>';
@@ -37,7 +41,12 @@ function createSecondCalendar(month,year) {
 function Data(month, year) {
     const months = ['Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 'Lipiec', 'Październik', 'Listopad', 'Grudzień'];
     document.getElementById("firstDate").innerHTML = months[month] + " " + year;
-    document.getElementById("secondDate").innerHTML = months[month+1] + " " + year;
+    if(month == 11){
+        year += 1;
+        month = 0;
+        document.getElementById("secondDate").innerHTML = months[month] + " " + year;
+    } else
+        document.getElementById("secondDate").innerHTML = months[month+1] + " " + year;
 }
 function Main() {
     let month = new Date().getMonth();
