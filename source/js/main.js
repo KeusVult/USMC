@@ -8,10 +8,10 @@ function Callendar() {
     if(a) {
         document.getElementById('firstCalendar').style.display = "none";
         document.getElementById('secondCalendar').style.display = "none";
-        a=false;
+        a = false;
     }else if(!a) {
         document.getElementById('firstCalendar').style.display = "block";
         document.getElementById('secondCalendar').style.display = "block";
-        a=true;
+        a = true;
     }
 }
