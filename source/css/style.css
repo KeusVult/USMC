@@ -156,8 +156,45 @@
     .main-content {
         width: 60%;
         height: 100px;
-        background: #0f172a;
         margin-left: 35px;
+        .info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            img {
+                max-height: 200px;
+                max-width: 200px;
+            }
+        }
+        li:first-child {
+            margin-top: 30px;
+        }
+        li {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            border-color: white;
+            border-width: 1px;
+            border-style: solid;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            i {
+                font-size: 200%;
+                margin-right: 30px;
+            }
+            p {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 30px;
+            }
+        }
+        li:hover {
+            background-color: rgb(104, 104, 104);
+            cursor: pointer;
+        }
     }
     .extra-content {
         margin-right: 35px;
