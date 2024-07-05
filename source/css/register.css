@@ -78,6 +78,7 @@
                 height: 60px;
                 display: flex;
                 margin-left: 30px;
+                align-items: center;
                 label {
                     margin-right: 10px;
                     align-self: center;
