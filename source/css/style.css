@@ -19,6 +19,8 @@
     justify-content: space-between;
     align-items: center;
     background-repeat: no-repeat;
+    background-image: url(../imgs/presentation.jpg);
+    z-index: 0;
     .login {
         margin-right: 120px;
         margin-top: 120px;
@@ -174,34 +176,32 @@
                 font-size: 65px;
             }
         }
-        li:first-child {
+        .data {
             margin-top: 30px;
-        }
-        li {
-            margin-top: 10px;
-            margin-bottom: 10px;
-            margin-right: 30px;
-            border-color: white;
-            border-width: 1px;
-            border-style: solid;
-            list-style-type: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            i {
-                font-size: 200%;
-                margin-right: 30px;
-            }
-            p {
+            background-color: #222222;
+            li {
                 margin-top: 10px;
                 margin-bottom: 10px;
-                font-size: 30px;
+                margin-right: 30px;
+                list-style-type: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                i {
+                    font-size: 200%;
+                    margin-right: 30px;
+                }
+                p {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    font-size: 30px;
+                }
             }
-        }
-        li:hover {
-            background-color: rgb(104, 104, 104);
-            cursor: pointer;
+            li:hover {
+                background-color: rgb(104, 104, 104);
+                cursor: pointer;
+            }
         }
     }
     .extra-content {
@@ -247,10 +247,6 @@
             }
         }
     }
-}
-.data {
-    margin-left: 10px;
-    margin-right: 10px;
 }
 .data:hover {
     color: #A6AE85;

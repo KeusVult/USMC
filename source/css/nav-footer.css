@@ -41,9 +41,13 @@
 .header > ul > li > a {
     text-decoration: none;
 }
+.header > a {
+    z-index: 1;
+}
 .header > a > img {
     width: 150px;
     height: 150px;
+    z-index: 2;
 }
 .footer {
     background-color: #181818;
